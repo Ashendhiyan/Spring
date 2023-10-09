@@ -56,15 +56,37 @@ public class AppInitializer {
 
         //---------------------------
 
-        MyConnection bean = ctx.getBean(MyConnection.class);
+      /*  MyConnection bean = ctx.getBean(MyConnection.class);
         System.out.println(bean);
 
         //@Bean - Bean ID ----> bean method name
-      /*  MyConnection bean1 = (MyConnection) ctx.getBean("getConnection");
-        System.out.println(bean1);*/
+        MyConnection bean1 = (MyConnection) ctx.getBean("getConnection");
+        System.out.println(bean1);
 
         // we can change default id @Bean("connection")
         MyConnection bean2 = (MyConnection) ctx.getBean("connection");
-        System.out.println(bean2);
+        System.out.println(bean2);*/
+
+
+        SpringBeanOne ref1 = ctx.getBean(SpringBeanOne.class);
+        SpringBeanOne ref2 = ctx.getBean(SpringBeanOne.class);
+        SpringBeanOne ref3 = ctx.getBean(SpringBeanOne.class);
+        System.out.println(ref1);
+        System.out.println(ref2);
+        System.out.println(ref3);
+
+
+        SpringBeanTwo b2ref1 = ctx.getBean(SpringBeanTwo.class);
+        SpringBeanTwo b2ref2 = ctx.getBean(SpringBeanTwo.class);
+        System.out.println(b2ref1);
+        System.out.println(b2ref2);
+
+        MyConnection con1 = ctx.getBean(MyConnection.class);
+        MyConnection con2 = ctx.getBean(MyConnection.class);
+        System.out.println(con1);
+        System.out.println(con2);
+
+
+
     }
 }
