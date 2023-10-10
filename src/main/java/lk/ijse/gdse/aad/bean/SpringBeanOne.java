@@ -3,9 +3,9 @@ package lk.ijse.gdse.aad.bean;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SpringBean {
-    public SpringBean() {
-        System.out.println("Spring Bean Object Created");
+public class SpringBeanOne {
+    public SpringBeanOne() {
+        System.out.println("Spring Bean One");
     }
 
     public void testBean(){
