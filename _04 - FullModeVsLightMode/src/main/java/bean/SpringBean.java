@@ -16,9 +16,10 @@ public class SpringBean {
    public MyBasicDataSource basicDataSource(){
 
         //Inter-bean dependency Invocation
-        MyConnection Connection = myConnection();
-        MyConnection Connection1 = myConnection();
-        MyConnection Connection2 = myConnection();
+
+        MyConnection Connection = myConnection();   //Not satisfy dependency   // new object    //Not manage by application context
+        MyConnection Connection1 = myConnection();  //Not satisfy dependency   // new object    //Not manage by application context
+        MyConnection Connection2 = myConnection();  //Not satisfy dependency   // new object    //Not manage by application context
 
         System.out.println(Connection);
         System.out.println(Connection1);
