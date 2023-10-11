@@ -11,11 +11,11 @@ public class AppInitializer {
         ctx.registerShutdownHook();
 
 
-        /*Boy bean = ctx.getBean(Boy.class);
-        bean.ChatWithGirl();*/
+        Boy bean = ctx.getBean(Boy.class);
+        bean.ChatWithGirl();
 
-        Kamal kamal = ctx.getBean(Kamal.class);
-        kamal.ChatWithKamali();
+      /*  Kamal kamal = ctx.getBean(Kamal.class);
+        kamal.ChatWithKamali();*/
 
 
     }
