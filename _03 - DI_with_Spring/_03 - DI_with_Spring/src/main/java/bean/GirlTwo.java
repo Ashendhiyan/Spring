@@ -4,41 +4,43 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.*;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Girl implements GoodGirl,BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
-    public Girl() {
-        System.out.println("Girl is here");
+@Primary
+public class GirlTwo implements GoodGirl,BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
+    public GirlTwo() {
+        System.out.println("GirlTwo is here");
     }
 
     @Override
     public void chat(){
-        System.out.println("Chatting");
+        System.out.println("GirlTwo is Chatting");
     }
 
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        System.out.println("Girl Bean Factory Aware");
+        System.out.println("GirlTwo Bean Factory Aware");
     }
 
     @Override
     public void setBeanName(String s) {
-        System.out.println("Girl Bean Name Aware");
+        System.out.println("GirlTwo Bean Name Aware");
     }
 
     @Override
     public void destroy() throws Exception {
-        System.out.println("Girl Disposable Bean Aware");
+        System.out.println("GirlTwo Disposable Bean Aware");
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("Girl Initializing Bean  Aware");
+        System.out.println("GirlTwo Initializing Bean  Aware");
     }
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        System.out.println("Girl Application context");
+        System.out.println("GirlTwo Application context");
     }
 }
