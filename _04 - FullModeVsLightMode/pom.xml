@@ -3,16 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>lk.ijse.gdse.aad</groupId>
+        <artifactId>01_Core</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>lk.ijse.gdse.aad</groupId>
-    <artifactId>01_Core</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <modules>
-        <module>_03 - DI_with_Spring/_03 - DI_with_Spring</module>
-        <module>_03 - DI_with_Spring/_03 - DI_with_Spring</module>
-        <module>_04 - FullModeVsLightMode</module>
-    </modules>
+    <groupId>lk</groupId>
+    <artifactId>_04-FullModeVsLightMode</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -27,4 +25,5 @@
             <version>5.3.21</version>
         </dependency>
     </dependencies>
+
 </project>
