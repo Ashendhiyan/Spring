@@ -4,9 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class SpringBeanOne {
-    @Autowired(required = false)
+    @Autowired(required = false)    // greediest  constructor (highest parameter count)
     public SpringBeanOne(@Value("C001") String id, @Value("10") int age, @Value("true") boolean b) {
         System.out.println("Spring Bean one");
         System.out.println(id);
