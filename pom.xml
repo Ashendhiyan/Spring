@@ -14,6 +14,7 @@
         <module>_04 - FullModeVsLightMode</module>
         <module>_05 - Configurations</module>
         <module>_06 - RuntimeValueInnjection</module>
+        <module>_07 - SpringEnvironment</module>
     </modules>
 
     <properties>
