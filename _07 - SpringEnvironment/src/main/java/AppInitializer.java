@@ -15,7 +15,7 @@ public class AppInitializer {
 
         //  Access System environment variables With java
         // System.getenv();
-       /* Map<String, String> getenv = System.getenv();
+    /*    Map<String, String> getenv = System.getenv();
         for (String key:getenv.keySet()) {
             System.out.println(key +" : "+ getenv.get(key));
         }
