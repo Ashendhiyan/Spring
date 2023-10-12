@@ -15,6 +15,7 @@
         <module>_05 - Configurations</module>
         <module>_06 - RuntimeValueInnjection</module>
         <module>_07 - SpringEnvironment</module>
+        <module>_08 - Spring_MVC</module>
     </modules>
 
     <properties>
