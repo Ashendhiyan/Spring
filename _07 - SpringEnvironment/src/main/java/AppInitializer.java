@@ -20,7 +20,12 @@ public class AppInitializer {
             System.out.println(key +" : "+ getenv.get(key));
         }
 
+        System.out.println("==================================================================");
 
+        Properties properties = System.getProperties();
+        for (Object key : properties.keySet()) {
+            System.out.println(key +" : "+properties.get(key));
+        }
 
 
     }
