@@ -7,8 +7,8 @@ public class AppInitializer {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
         context.register(AppConfig1.class);
-        context.register(AppConfig2.class);
-        context.register(AppConfig3.class);
+//        context.register(AppConfig3.class);
+//        context.register(AppConfig2.class);
         context.refresh();
         context.registerShutdownHook();
     }
