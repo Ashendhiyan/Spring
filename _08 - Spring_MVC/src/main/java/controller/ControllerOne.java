@@ -6,11 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @Controller
-@RequestMapping("controllerone")
+@RequestMapping("home")
 public class ControllerOne {
 
     @GetMapping
-    public void testMethod(){
+    public String testMethod(){
         System.out.println("Request received");
+        return "index";
     }
 }
