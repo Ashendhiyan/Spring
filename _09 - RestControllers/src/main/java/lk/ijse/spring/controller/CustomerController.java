@@ -13,10 +13,10 @@ public class CustomerController {
         return "Customer Controller";
     }
 
- /*   @GetMapping
+    @GetMapping(path = "search")
     public String searchCustomer(){
         return "Search Customer";
-    }*/
+    }
 
     @PostMapping
     public String saveCustomer(){
