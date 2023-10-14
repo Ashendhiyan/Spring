@@ -16,6 +16,7 @@
         <module>_06 - RuntimeValueInnjection</module>
         <module>_07 - SpringEnvironment</module>
         <module>_08 - Spring_MVC</module>
+        <module>_09 - RestControllers</module>
     </modules>
 
     <properties>
