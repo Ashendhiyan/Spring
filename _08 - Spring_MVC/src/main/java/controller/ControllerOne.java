@@ -1,16 +1,13 @@
 package controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 @RequestMapping("controllerone")
 public class ControllerOne {
-
-    public ControllerOne() {
-        System.out.println("Controller One Instantiated...");
-    }
 
     @GetMapping
     public void testMethod(){
