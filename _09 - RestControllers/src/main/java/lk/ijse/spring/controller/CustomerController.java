@@ -1,9 +1,6 @@
 package lk.ijse.spring.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 //REST - Representational State transfer (A way of data transfer among client server app)
@@ -16,8 +13,23 @@ public class CustomerController {
         return "Customer Controller";
     }
 
+ /*   @GetMapping
+    public String searchCustomer(){
+        return "Search Customer";
+    }*/
+
     @PostMapping
     public String saveCustomer(){
         return "Customer Saved and Post Method Invoked";
+    }
+
+    @DeleteMapping
+    public String deleteCustomer(){
+        return "Customer deleted..!";
+    }
+
+    @PutMapping
+    public String updateCustomer(){
+        return "Customer updated..!";
     }
 }
