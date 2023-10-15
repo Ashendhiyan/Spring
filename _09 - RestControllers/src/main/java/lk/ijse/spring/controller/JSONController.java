@@ -13,7 +13,7 @@ public class JSONController {
         return "Hello JSON..";
     }
 
-    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)    //  content - type=application/json
     public CustomerDTO sendBackJson(){
         return new CustomerDTO("C001","Ashen","kandy",1000.00);
     }
