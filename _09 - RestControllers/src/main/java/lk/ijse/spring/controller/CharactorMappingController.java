@@ -17,4 +17,9 @@ public class CharactorMappingController {
     public String test(){
         return "Get Mapping Invoked..";
     }
+
+    @GetMapping(path = "????/search")
+    public String test2(){
+        return "Get Mapping Invoked(test 2)..";
+    }
 }
