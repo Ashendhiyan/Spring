@@ -17,7 +17,7 @@ public class PathVariableController {
     //In spring we can retrieve value of path segments
     // to do that we hava to crate path variables -> {I001}
 
-    @GetMapping(path = "{id}")
+    @GetMapping(path = "{id:[a-z]{3}}")
     public String test(@PathVariable("id") String itemCode){    // setting alias  when parameters names and variable names different
         return itemCode;
     }
