@@ -18,7 +18,7 @@ public class PathVariableController {
     // to do that we hava to crate path variables -> {I001}
 
     @GetMapping(path = "{id}")
-    public String test(@PathVariable("id") String itemCode){
+    public String test(@PathVariable("id") String itemCode){    // setting alias  when parameters names and variable names different
         return itemCode;
     }
 
