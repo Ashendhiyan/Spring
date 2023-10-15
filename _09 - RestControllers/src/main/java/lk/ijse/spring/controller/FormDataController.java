@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("form")
 public class FormDataController {
 
+    //  x-www-form-url-encoded
+    // query String
+
     @PostMapping("test")
     public String testForm1(String id,String name){
         return "Request received.."+id+" "+name;
