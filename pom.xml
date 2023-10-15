@@ -17,6 +17,7 @@
         <module>_07 - SpringEnvironment</module>
         <module>_08 - Spring_MVC</module>
         <module>_09 - RestControllers</module>
+        <module>_10 - SpringWithMaven</module>
     </modules>
 
     <properties>
